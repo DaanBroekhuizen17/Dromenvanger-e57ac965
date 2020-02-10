@@ -1,17 +1,22 @@
 <?php
-echo("hoeveel mensen?");
+echo("hoeveel mensen zijn er?");
 $AantalMensen = readline();
 
 if(is_numeric($AantalMensen)){
-    for($x=0;$x<$AantalMensen;$x++){
-        echo("wie?");
+
+    for($i=0 ;$i < $AantalMensen; $i++){
+        echo("wat is uw naam?");
         $persoon = readline();
-        echo("Hoeveel dromen?");
+
+        echo("Hoeveel dromen heeft u?");
         $hoveelDroom = readline();
+
         $tempDroom = array();
-        for($y=0;$y<$hoveelDroom;$y++){
-            echo("wat?");
+
+        for( $y=0; $y < $hoveelDroom; $y++){
+            echo("wat is uw droom?");
             $droom = readline();
+            
             array_push($tempDroom,$droom);
 
         }
